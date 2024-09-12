@@ -1,9 +1,41 @@
+/* Center the calculator on the page and set a background */
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
 }
 
+/* Calculator Container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    aspect-ratio: 4/7;
+    background-color: #111;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Display Screen */
+.screen {
+    flex: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    font-size: 4rem;
+    background-color: #222;
+    border-bottom: 2px solid #444;
+    overflow-x: auto;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+/* General Button Styles */
 button {
     aspect-ratio: 1;
     flex: 1;
@@ -11,20 +43,23 @@ button {
     border-radius: 50%;
     background-color: #333;
     color: white;
-    font-size: xx-large
+    font-size: 1.5rem;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
-
-.display {
-    flex: 3;
-}
-
+/* Equal Button */
 #equal {
     border-radius: 10000px;
     flex: 2;
     aspect-ratio: 2;
+    background-color: darkorange;
 }
 
+/* Operator and Function Buttons */
 .orange {
     background-color: darkorange;
 }
@@ -33,24 +68,26 @@ button {
     background-color: grey;
 }
 
-.calculator {
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    height: 100vh;
-    border: none;
-    aspect-ratio: 4/7;
-}
-
+/* Keypad Layout */
 .keypad {
-    justify-content: center;
     display: flex;
     flex-direction: column;
     flex: 4;
+    padding: 10px;
 }
 
+/* Row Layout */
 .row {
     display: flex;
     justify-content: space-evenly;
     flex: 1;
+}
+
+/* Hover and Active States for Buttons */
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #777;
 }

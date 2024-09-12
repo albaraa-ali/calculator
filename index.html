@@ -6,45 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="calculator">
-        <div class="display">
-            
-        </div>
+        <div class="screen" id="display">0</div>
         <div class="keypad">
             <div class="row">
-                <button class="btn grey">&#60;</button>
-                <button class="btn grey">C</button>
-                <button class="btn grey">&#37;</button>
-                <button class="btn orange">&#247;</button>
+                <button id="backspace" class="btn grey">&#60;</button>
+                <button id="clear" class="btn grey">C</button>
+                <button id="mod" class="btn grey operator">&#37;</button>
+                <button id="divide" class="btn orange operator">&#247;</button>
             </div>
             <div class="row">
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn orange">&#215;</button>
+                <button class="btn number-btn">7</button>
+                <button class="btn number-btn">8</button>
+                <button class="btn number-btn">9</button>
+                <button id="multiply" class="btn orange operator">&#215;</button>
             </div>
             <div class="row">
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn orange">&#8722;</button>
+                <button class="btn number-btn">4</button>
+                <button class="btn number-btn">5</button>
+                <button class="btn number-btn">6</button>
+                <button id="subtract" class="btn orange operator">&#8722;</button>
             </div>
             <div class="row">
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn orange">&#43;</button>
+                <button class="btn number-btn">1</button>
+                <button class="btn number-btn">2</button>
+                <button class="btn number-btn">3</button>
+                <button id="add" class="btn orange operator">&#43;</button>
             </div>
             <div class="row last">
-                <button class="btn">0</button>
-                <button class="btn">&#8901;</button>
+                <button class="btn number-btn">0</button>
+                <button id="point" class="btn">.</button>
                 <button id="equal" class="btn orange">&#61;</button>
             </div>
         </div>
-
     </div>
 </body>
 
