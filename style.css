@@ -11,20 +11,18 @@ button {
     border-radius: 50%;
     background-color: #333;
     color: white;
-    font-size:xx-large
+    font-size: xx-large
 }
 
-.screen {
-    background-color: orange;
+
+.display {
+    flex: 3;
 }
 
-.equal {
+#equal {
+    border-radius: 10000px;
     flex: 2;
     aspect-ratio: 2;
-    width: 50%;
-    border-radius: 1000px;
-    padding-right: 2%;
-    text-align: center;
 }
 
 .orange {
@@ -38,20 +36,21 @@ button {
 .calculator {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #000;
     height: 100vh;
-    border:none;
-    aspect-ratio: 1/2;
+    border: none;
+    aspect-ratio: 4/7;
 }
 
 .keypad {
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 4;
 }
 
 .row {
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
 }
