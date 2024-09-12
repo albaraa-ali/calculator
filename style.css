@@ -1,0 +1,47 @@
+* {
+    --button-height: 20vmin;
+    --button-gap: 1vmin;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: var(--button-height);
+    aspect-ratio: 1;
+    border: none;
+    border-radius: calc(var(--button-height)/2);
+    background-color: #aaaaaa;
+    color: white;
+    font-size: calc(var(--button-height)/2.4);
+    font-weight: 900;
+}
+
+.screen {
+    height: 20%;
+    background-color: darkorange;
+}
+
+.calculator {
+    background-color: lightblue;
+    width: 100vmin;
+    height: 100%;
+}
+
+.keypad {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--button-gap);
+}
+
+.zero {
+    height: var(--button-height);
+    width: calc(2 * var(--button-height) + var(--button-gap));
+    border-radius: calc(var(--button-height) / 2);
+    padding-right: calc(var(--button-height) + var(--button-gap));
+}
